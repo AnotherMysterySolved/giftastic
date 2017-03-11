@@ -8,7 +8,7 @@ $(document).ready(function() {
         for (i = 0; i < buttonFactory.length; i++) {
             // $("#topic-buttons").append("<button id =" + topics[i] + ">");
             // $("button#" + topics[i]).text(topics[i]);
-            var button = $("<button>", { class: "btn btn-primary" });
+            var button = $("<button>", { class: "btn btn-primary"});
             button.attr("id", buttonFactory[i]).text(buttonFactory[i]);
             $("#topic-buttons").append(button);
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
         //create variables for image and URL (limit 10 images)
         $("#gifs").empty();
         var image = $(this).attr("id");
-        var queryUrl = "http:api.giphy.com/v1/gifs/search?q=" + image + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var queryUrl = "https:api.giphy.com/v1/gifs/search?q=" + image + "&api_key=dc6zaTOxFJmzC&limit=10";
 
         //Running the query and getting the data
         $.ajax({
