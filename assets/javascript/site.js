@@ -35,7 +35,7 @@ $(document).ready(function() {
         //create variables for image and URL (limit 10 images)
         $("#gifs").empty();
         var image = $(this).attr("id");
-        var queryUrl = "https:api.giphy.com/v1/gifs/search?q=" + image + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + image + "&api_key=dc6zaTOxFJmzC&limit=10";
 
         //Running the query and getting the data
         $.ajax({
